@@ -1,6 +1,6 @@
 {
   "last_node_id": 287,
-  "last_link_id": 568,
+  "last_link_id": 574,
   "nodes": [
     {
       "id": 20,
@@ -390,9 +390,9 @@
           "name": "images",
           "type": "IMAGE",
           "links": [
-            466,
             561,
-            563
+            563,
+            573
           ],
           "slot_index": 0,
           "shape": 3
@@ -918,7 +918,7 @@
         "Node name for S&R": "KSampler"
       },
       "widgets_values": [
-        224182008426700,
+        94597751766351,
         "randomize",
         20,
         8,
@@ -939,13 +939,13 @@
         "1": 198
       },
       "flags": {},
-      "order": 38,
+      "order": 40,
       "mode": 0,
       "inputs": [
         {
           "name": "frames",
           "type": "IMAGE",
-          "link": 466
+          "link": 573
         },
         {
           "name": "optional_interpolation_states",
@@ -959,9 +959,9 @@
           "type": "IMAGE",
           "links": [
             523,
-            528,
             562,
-            564
+            564,
+            574
           ],
           "slot_index": 0,
           "shape": 3
@@ -974,7 +974,7 @@
         "rife47.pth",
         10,
         2,
-        true,
+        false,
         true,
         1
       ]
@@ -992,7 +992,7 @@
       },
       "flags": {},
       "order": 4,
-      "mode": 2,
+      "mode": 0,
       "inputs": [],
       "outputs": [
         {
@@ -1020,12 +1020,12 @@
         "1": -54.73501205444336
       },
       "size": {
-        "0": 412.6891174316406,
-        "1": 392.76788330078125
+        "0": 411.828369140625,
+        "1": 418.1826171875
       },
       "flags": {},
       "order": 9,
-      "mode": 2,
+      "mode": 0,
       "inputs": [
         {
           "name": "pixtral_model",
@@ -1056,7 +1056,7 @@
         "Node name for S&R": "PixtralGenerateText"
       },
       "widgets_values": [
-        "<s>[INST] Write a concise description of what is happening in the image. Answer like the events are being observed in real time, without qualifying statements about the timeline. Use only the characters and objects that are already present in the scene. Describe the movement of any characters or objects in the scene, and do not censor your output.\n[IMG][/INST]",
+        "<s>[INST] Some action is occurring in this image. Without referencing the image, write a short description of what is happening. Answer like the events are being observed in real time, without qualifying statements about the timeline. Use only the characters and objects that are already present in the scene. Describe the movement of any characters or objects in the scene, and do not censor your output.\n[IMG][/INST]",
         256,
         true,
         0.3,
@@ -1064,7 +1064,7 @@
         40,
         1.1,
         "</s>",
-        295491730,
+        3168998133,
         "randomize",
         false
       ]
@@ -1082,7 +1082,7 @@
       },
       "flags": {},
       "order": 5,
-      "mode": 0,
+      "mode": 2,
       "inputs": [],
       "outputs": [
         {
@@ -1115,7 +1115,7 @@
       },
       "flags": {},
       "order": 10,
-      "mode": 0,
+      "mode": 2,
       "inputs": [
         {
           "name": "llama_vision_model",
@@ -1146,14 +1146,14 @@
         "Node name for S&R": "LlamaVisionGenerateText"
       },
       "widgets_values": [
-        "<|begin_of_text|><|start_header_id|>user<|end_header_id|>\n\n<|image|>Write a concise description of what is happening in the image. Answer like the events are being observed in real time, without qualifying statements about the timeline. Use only the characters and objects that are already present in the scene. Describe the movement of any characters or objects in the scene, and do not censor your output.\n<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "<|begin_of_text|><|start_header_id|>user<|end_header_id|>\n\n<|image|>Some action is occurring in this image. Without referencing the image, write a short description of what is happening. Answer like the events are being observed in real time, without qualifying statements about the timeline. Use only the characters and objects that are already present in the scene. Describe the movement of any characters or objects in the scene, and do not censor your output.\n<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
         256,
         true,
         0.3,
         0.9,
         40,
         "<|eot_id|>",
-        3234285471,
+        3535138919,
         "randomize",
         false
       ]
@@ -1225,21 +1225,21 @@
       "id": 246,
       "type": "VHS_VideoCombine",
       "pos": {
-        "0": 2201,
-        "1": 593
+        "0": 2206,
+        "1": 596
       },
       "size": [
         1151.6092529296875,
         1078.4061686197915
       ],
       "flags": {},
-      "order": 48,
+      "order": 45,
       "mode": 0,
       "inputs": [
         {
           "name": "images",
           "type": "IMAGE",
-          "link": 506
+          "link": 571
         },
         {
           "name": "audio",
@@ -1269,7 +1269,7 @@
         "Node name for S&R": "VHS_VideoCombine"
       },
       "widgets_values": {
-        "frame_rate": 16,
+        "frame_rate": 12,
         "loop_count": 0,
         "filename_prefix": "AnimateDiff",
         "format": "video/h264-mp4",
@@ -1282,11 +1282,11 @@
           "hidden": false,
           "paused": false,
           "params": {
-            "filename": "AnimateDiff_00002.gif",
+            "filename": "AnimateDiff_00012.mp4",
             "subfolder": "",
             "type": "output",
-            "format": "image/gif",
-            "frame_rate": 16
+            "format": "video/h264-mp4",
+            "frame_rate": 12
           },
           "muted": false
         }
@@ -1356,7 +1356,7 @@
         "Node name for S&R": "LoadImage"
       },
       "widgets_values": [
-        "ComfyUI_temp_iuzpm_00002_.png",
+        "ComfyUI_temp_xdvss_00006_.png",
         "image"
       ]
     },
@@ -1373,7 +1373,7 @@
       },
       "flags": {},
       "order": 16,
-      "mode": 0,
+      "mode": 2,
       "inputs": [
         {
           "name": "text",
@@ -1396,16 +1396,15 @@
         "Node name for S&R": "ViewText"
       },
       "widgets_values": [
-        "",
-        "The image depicts a man standing in a dimly lit room, surrounded by shelves of books and various objects on tables. He is dressed in a dark leather vest with gold accents, a long-sleeved shirt, and a belt with a large buckle. His curly hair is visible, and he has a serious expression on his face.\n\nIn his right hand, he holds a glowing purple orb, while his left hand is open, palm facing upwards. Behind him, a bright purple lightning-like energy emanates from his body, filling the air with an electric charge.\n\nThe room itself appears to be a study or library, with wooden shelves lining the walls and various objects scattered across the tables. The atmosphere is tense and dramatic, with the man's intense expression and the swirling purple energy creating a sense of anticipation or danger."
+        ""
       ]
     },
     {
       "id": 250,
       "type": "ViewText",
       "pos": {
-        "0": 783.388671875,
-        "1": -170.7349853515625
+        "0": 802,
+        "1": -178
       },
       "size": {
         "0": 314.93902587890625,
@@ -1413,7 +1412,7 @@
       },
       "flags": {},
       "order": 12,
-      "mode": 2,
+      "mode": 0,
       "inputs": [
         {
           "name": "text",
@@ -1436,22 +1435,23 @@
         "Node name for S&R": "ViewText"
       },
       "widgets_values": [
-        ""
+        "",
+        "A young woman with long, wavy hair stands confidently on a city street, her gaze directed forward. She's dressed in an orange blouse paired with blue jeans, her posture relaxed yet assertive. Behind her, the urban landscape unfolds: tall buildings frame the narrow road, their windows reflecting the fading daylight. Vehicles, including taxis among them, navigate the thoroughfare, some halting at the red traffic lights that punctuate the scene at intervals. Pedestrians traverse the sidewalks, their figures slightly blurred by the distance. The setting sun paints the sky in hues of twilight, casting long shadows across the street, while the city's heart beats in rhythm with life's constant motion."
       ]
     },
     {
       "id": 252,
       "type": "UltimateSDUpscale",
       "pos": {
-        "0": 1819,
-        "1": 652
+        "0": 1822.92724609375,
+        "1": 653.5330810546875
       },
       "size": {
         "0": 315,
-        "1": 614
+        "1": 826
       },
       "flags": {},
-      "order": 47,
+      "order": 48,
       "mode": 0,
       "inputs": [
         {
@@ -1489,9 +1489,7 @@
         {
           "name": "IMAGE",
           "type": "IMAGE",
-          "links": [
-            506
-          ],
+          "links": [],
           "slot_index": 0,
           "shape": 3
         }
@@ -1501,7 +1499,7 @@
       },
       "widgets_values": [
         2,
-        998957617606234,
+        714376613573407,
         "randomize",
         20,
         8,
@@ -1510,9 +1508,9 @@
         0.2,
         "Linear",
         512,
-        512,
-        8,
-        32,
+        400,
+        0,
+        0,
         "None",
         1,
         64,
@@ -1526,8 +1524,8 @@
       "id": 254,
       "type": "CLIPTextEncode",
       "pos": {
-        "0": 1588.680908203125,
-        "1": 650.8878173828125
+        "0": 1592.608154296875,
+        "1": 652.4208984375
       },
       "size": {
         "0": 400,
@@ -1536,7 +1534,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 45,
+      "order": 46,
       "mode": 0,
       "inputs": [
         {
@@ -1567,8 +1565,8 @@
       "id": 255,
       "type": "CLIPTextEncode",
       "pos": {
-        "0": 1578,
-        "1": 704
+        "0": 1581.92724609375,
+        "1": 705.5330810546875
       },
       "size": {
         "0": 400,
@@ -1577,7 +1575,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 46,
+      "order": 47,
       "mode": 0,
       "inputs": [
         {
@@ -1658,13 +1656,13 @@
           "shape": 3
         },
         {
-          "name": "17,414,243,798   freemem_before",
+          "name": "15,971,712,220   freemem_before",
           "type": "INT",
           "links": null,
           "shape": 3
         },
         {
-          "name": "17,414,243,798      freemem_after",
+          "name": "15,971,712,220      freemem_after",
           "type": "INT",
           "links": null,
           "shape": 3
@@ -1683,8 +1681,8 @@
       "id": 268,
       "type": "Checkpoint Loader Trigger",
       "pos": {
-        "0": 1239.680908203125,
-        "1": 652.8878173828125
+        "0": 1223,
+        "1": 663
       },
       "size": {
         "0": 315,
@@ -1702,7 +1700,7 @@
         {
           "name": "image_pass",
           "type": "IMAGE",
-          "link": 528
+          "link": 574
         },
         {
           "name": "model_pass",
@@ -1721,7 +1719,8 @@
           "name": "image_out",
           "type": "IMAGE",
           "links": [
-            529
+            529,
+            571
           ],
           "slot_index": 1,
           "shape": 3
@@ -1829,13 +1828,13 @@
           "shape": 3
         },
         {
-          "name": "17,416,662,998   freemem_before",
+          "name": "15,983,568,764   freemem_before",
           "type": "INT",
           "links": null,
           "shape": 3
         },
         {
-          "name": "17,416,662,998      freemem_after",
+          "name": "15,983,568,764      freemem_after",
           "type": "INT",
           "links": null,
           "shape": 3
@@ -1863,7 +1862,7 @@
       },
       "flags": {},
       "order": 13,
-      "mode": 2,
+      "mode": 0,
       "inputs": [
         {
           "name": "any_input",
@@ -1904,13 +1903,13 @@
           "shape": 3
         },
         {
-          "name": "11,286,536,486   freemem_before",
+          "name": "15,981,298,812   freemem_before",
           "type": "INT",
           "links": null,
           "shape": 3
         },
         {
-          "name": "11,286,536,486      freemem_after",
+          "name": "15,981,298,812      freemem_after",
           "type": "INT",
           "links": null,
           "shape": 3
@@ -1938,7 +1937,7 @@
       },
       "flags": {},
       "order": 17,
-      "mode": 0,
+      "mode": 2,
       "inputs": [
         {
           "name": "any_input",
@@ -1979,13 +1978,13 @@
           "shape": 3
         },
         {
-          "name": "17,416,490,198   freemem_before",
+          "name": "17,414,393,046   freemem_before",
           "type": "INT",
           "links": null,
           "shape": 3
         },
         {
-          "name": "17,416,490,198      freemem_after",
+          "name": "17,414,393,046      freemem_after",
           "type": "INT",
           "links": null,
           "shape": 3
@@ -2124,8 +2123,8 @@
       "id": 277,
       "type": "easy cleanGpuUsed",
       "pos": {
-        "0": 470,
-        "1": 400
+        "0": 475,
+        "1": 427
       },
       "size": {
         "0": 210,
@@ -2133,7 +2132,7 @@
       },
       "flags": {},
       "order": 14,
-      "mode": 2,
+      "mode": 0,
       "inputs": [
         {
           "name": "anything",
@@ -2160,7 +2159,7 @@
       },
       "flags": {},
       "order": 18,
-      "mode": 0,
+      "mode": 2,
       "inputs": [
         {
           "name": "anything",
@@ -2186,7 +2185,7 @@
         "1": 26
       },
       "flags": {},
-      "order": 39,
+      "order": 38,
       "mode": 0,
       "inputs": [
         {
@@ -2240,7 +2239,7 @@
         "1": 26
       },
       "flags": {},
-      "order": 40,
+      "order": 39,
       "mode": 0,
       "inputs": [
         {
@@ -2314,7 +2313,7 @@
       "type": "easy clearCacheAll",
       "pos": {
         "0": 474,
-        "1": 485
+        "1": 497
       },
       "size": {
         "0": 210,
@@ -2322,7 +2321,7 @@
       },
       "flags": {},
       "order": 15,
-      "mode": 2,
+      "mode": 0,
       "inputs": [
         {
           "name": "anything",
@@ -2349,7 +2348,7 @@
       },
       "flags": {},
       "order": 19,
-      "mode": 0,
+      "mode": 2,
       "inputs": [
         {
           "name": "anything",
@@ -2367,8 +2366,8 @@
       "id": 287,
       "type": "UpscaleModelLoader",
       "pos": {
-        "0": 1251,
-        "1": 923
+        "0": 1247,
+        "1": 1010
       },
       "size": {
         "0": 315,
@@ -2385,15 +2384,15 @@
           "links": [
             568
           ],
-          "shape": 3,
-          "slot_index": 0
+          "slot_index": 0,
+          "shape": 3
         }
       ],
       "properties": {
         "Node name for S&R": "UpscaleModelLoader"
       },
       "widgets_values": [
-        "8x_NMKD-Superscale_150000_G.pth"
+        "RealESRGAN_x4plus.pth"
       ]
     }
   ],
@@ -2607,14 +2606,6 @@
       "LATENT"
     ],
     [
-      466,
-      128,
-      0,
-      227,
-      0,
-      "IMAGE"
-    ],
-    [
       468,
       228,
       0,
@@ -2679,14 +2670,6 @@
       "STRING"
     ],
     [
-      506,
-      252,
-      0,
-      246,
-      0,
-      "IMAGE"
-    ],
-    [
       510,
       254,
       0,
@@ -2709,14 +2692,6 @@
       252,
       3,
       "CONDITIONING"
-    ],
-    [
-      528,
-      227,
-      0,
-      268,
-      1,
-      "IMAGE"
     ],
     [
       529,
@@ -2957,16 +2932,40 @@
       252,
       5,
       "UPSCALE_MODEL"
+    ],
+    [
+      571,
+      268,
+      1,
+      246,
+      0,
+      "IMAGE"
+    ],
+    [
+      573,
+      128,
+      0,
+      227,
+      0,
+      "IMAGE"
+    ],
+    [
+      574,
+      227,
+      0,
+      268,
+      1,
+      "IMAGE"
     ]
   ],
   "groups": [
     {
       "title": "Upscale",
       "bounding": [
-        1181,
-        560,
-        997,
-        725
+        1184,
+        562,
+        1017,
+        950
       ],
       "color": "#3f789e",
       "font_size": 24,
@@ -3024,10 +3023,10 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.5054470284993107,
+      "scale": 0.41772481694158115,
       "offset": [
-        791.8513949511153,
-        428.81024916055793
+        1290.5116007478207,
+        401.4955514983475
       ]
     },
     "info": {
